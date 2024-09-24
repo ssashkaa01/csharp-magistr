@@ -1,0 +1,34 @@
+﻿<Window x:Class="Paint.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:local="clr-namespace:Paint"
+        mc:Ignorable="d"
+        Title="Paint" Height="450" Width="800">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Файл">
+                <MenuItem Header="Зберегти" Click="Save_Click" />
+                <MenuItem Header="Відкрити" Click="Open_Click" />
+            </MenuItem>
+            <MenuItem Header="Інструменти">
+                <MenuItem Header="Кисть" Click="Brush_Click" />
+                <MenuItem Header="Гумка" Click="Eraser_Click" />
+                <MenuItem Header="Лінія" Click="Line_Click" />
+                <MenuItem Header="Прямокутник" Click="Rectangle_Click" />
+                <MenuItem Header="Коло" Click="Ellipse_Click" />
+            </MenuItem>
+        </Menu>
+
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="10">
+            <Button Content="Колір" Width="75" Click="SelectColor_Click" />
+            <TextBlock Text="Розмір кисті:" VerticalAlignment="Center" Margin="10,0,0,0" />
+            <Slider Name="brushSizeSlider" Minimum="1" Maximum="20" Value="5" Width="100" Margin="10,0,0,0" ValueChanged="brushSizeSlider_ValueChanged" />
+        </StackPanel>
+
+        <Canvas Name="drawingCanvas" Background="White" MouseDown="drawingCanvas_MouseDown" 
+                MouseMove="drawingCanvas_MouseMove" MouseUp="drawingCanvas_MouseUp" />
+    </DockPanel>
+</Window>

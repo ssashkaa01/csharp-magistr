@@ -1,0 +1,45 @@
+﻿<Window x:Class="Editor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Editor"
+        mc:Ignorable="d"
+        Title="Text Editor" Height="450" Width="800">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Файл">
+                <MenuItem Header="Новий" Click="NewFile_Click"/>
+                <MenuItem Header="Відкрити" Click="OpenFile_Click"/>
+                <MenuItem Header="Зберегти" Click="SaveFile_Click"/>
+                <MenuItem Header="Вихід" Click="Exit_Click"/>
+            </MenuItem>
+            <MenuItem Header="Редагування">
+                <MenuItem Header="Копіювати" Click="Copy_Click"/>
+                <MenuItem Header="Вирізати" Click="Cut_Click"/>
+                <MenuItem Header="Вставити" Click="Paste_Click"/>
+            </MenuItem>
+            <ToolBar DockPanel.Dock="Top">
+                <ComboBox Name="FontFamilyComboBox" Width="150" SelectionChanged="FontFamilyComboBox_SelectionChanged">
+                    <ComboBoxItem IsSelected="True">Arial</ComboBoxItem>
+                    <ComboBoxItem>Calibri</ComboBoxItem>
+                    <ComboBoxItem>Times New Roman</ComboBoxItem>
+                </ComboBox>
+                <ComboBox Name="FontSizeComboBox" Width="50" SelectionChanged="FontSizeComboBox_SelectionChanged">
+                    <ComboBoxItem IsSelected="True">12</ComboBoxItem>
+                    <ComboBoxItem>14</ComboBoxItem>
+                    <ComboBoxItem>16</ComboBoxItem>
+                    <ComboBoxItem>18</ComboBoxItem>
+                    <ComboBoxItem>20</ComboBoxItem>
+                </ComboBox>
+                <Button Name="BoldButton" Content="B" FontWeight="Bold" Click="BoldButton_Click" Width="30"/>
+                <Button Name="ItalicButton" Content="I" FontStyle="Italic" Click="ItalicButton_Click" Width="30"/>
+                <Button Name="UnderlineButton" Content="U" Click="UnderlineButton_Click" Width="30"/>
+            </ToolBar>
+            <MenuItem Header="Допомога">
+                <MenuItem Header="Про програму" Click="About_Click"/>
+            </MenuItem>
+        </Menu>
+        <RichTextBox Name="TextEditor" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" />
+    </DockPanel>
+</Window>

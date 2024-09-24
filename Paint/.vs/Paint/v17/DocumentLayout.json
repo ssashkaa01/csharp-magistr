@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "W:\\C_SHARP\\Paint\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B65FC1DB-B519-4915-B12C-D149594A66F3}|Paint\\Paint.csproj|w:\\c_sharp\\paint\\paint\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B65FC1DB-B519-4915-B12C-D149594A66F3}|Paint\\Paint.csproj|solutionrelative:paint\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B65FC1DB-B519-4915-B12C-D149594A66F3}|Paint\\Paint.csproj|W:\\C_SHARP\\Paint\\paint\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B65FC1DB-B519-4915-B12C-D149594A66F3}|Paint\\Paint.csproj|solutionrelative:paint\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "W:\\C_SHARP\\Paint\\Paint\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Paint\\MainWindow.xaml.cs",
+              "ToolTip": "W:\\C_SHARP\\Paint\\Paint\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Paint\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAowLYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T07:42:47.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "W:\\C_SHARP\\Paint\\Paint\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Paint\\MainWindow.xaml",
+              "ToolTip": "W:\\C_SHARP\\Paint\\Paint\\MainWindow.xaml",
+              "RelativeToolTip": "Paint\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-24T07:41:57.443Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
